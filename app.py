@@ -89,17 +89,17 @@ def main():
     with tab1:
         st.markdown("### Patient Information")
         
-        # Input fields
+        # Input fields with corrected minimum heights
         symptoms = st.text_area("Patient Symptoms", 
-            height=100,
+            height=150,  # Increased from 100
             placeholder="Enter patient's symptoms and complaints...")
             
         examination = st.text_area("Physical Examination", 
-            height=100,
+            height=150,  # Increased from 100
             placeholder="Enter physical examination findings...")
             
         additional_info = st.text_area("Additional Information (optional)",
-            height=50,
+            height=100,  # Increased from 50
             placeholder="Enter any additional relevant information...")
         
         # Generate button
